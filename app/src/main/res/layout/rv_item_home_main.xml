@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewItemList"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="@dimen/main_card_pn_margin"
+        android:layout_marginBottom="@dimen/main_card_pn_margin"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/barlow_medium"
+                android:text="Recommended"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/btnViewAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvViewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/barlow_medium"
+                    android:text="@string/view_all"
+                    android:textColor="@color/see_all_text_color"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.test.assignment.utils.HorizontalRecyclerView
+            android:id="@+id/rvItems"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBannerItem"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/main_card_pn_margin"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="@dimen/main_card_pn_margin"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imBanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/viewPagerContainer"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/main_card_pn_margin"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/main_card_pn_margin"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            app:ci_drawable="@drawable/view_pager_selector_ash"
+            app:ci_drawable_unselected="@drawable/view_pager_un_selector_light_ash"
+            app:ci_width="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

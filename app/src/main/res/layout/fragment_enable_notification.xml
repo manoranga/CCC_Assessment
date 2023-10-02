@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_enable_notification_view"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/order_dispatch_view"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@color/background_enable_notification_view_card"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/appIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/app_icon">
+
+                    </ImageView>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/order_dispatch_text_views"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/order_dispatched"
+                        android:textSize="14sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/order_dispatched_des"
+                        android:textSize="9sp">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/text_stay_loop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/barlow_medium"
+            android:text="@string/stay_in_the"
+            android:gravity="center"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_get_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/get_importa"
+            android:lineSpacingExtra="2sp"
+            android:gravity="center"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/btn_enable_notification"
+            android:layout_width="@dimen/basic_button_width"
+            android:layout_height="@dimen/basic_button_height"
+            android:layout_gravity="center"
+            android:background="@color/enable_notification_button_color">
+
+            <TextView
+                android:id="@+id/next_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/barlow_medium"
+                android:gravity="center"
+                android:text="@string/enable_notification"
+                android:textAppearance="@style/get_started" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_not_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/barlow_medium"
+            android:text="@string/not_now"
+            android:textAppearance="@style/not_now" />
+    </LinearLayout>
+</FrameLayout>

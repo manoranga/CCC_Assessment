@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.base.StartUpActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/mainview_background">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="@color/background_shadow_color">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_view_app_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/main_view_icon">
+
+            </ImageView>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/main_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/pager_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                app:ci_drawable="@drawable/view_pager_selector"
+                app:ci_drawable_unselected="@drawable/view_pager_un_selector"
+                app:ci_width="8dp">
+            </me.relex.circleindicator.CircleIndicator3>
+
+            <RelativeLayout
+                android:id="@+id/btn_get_started"
+                android:layout_width="match_parent"
+                android:layout_marginTop="80dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/basic_button_width"
+                    android:layout_height="@dimen/basic_button_height"
+                    android:layout_centerInParent="true"
+                    android:background="@color/view_pager_select_color">
+
+                    <TextView
+                        android:id="@+id/get_started"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="center"
+                        android:text="@string/get_started"
+                        android:textAppearance="@style/get_started" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_skip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_skip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/barlow_medium"
+                        android:gravity="center"
+                        android:text="@string/skip"
+                        android:textAppearance="@style/skip" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/splashView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/app_icon" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/register_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/enable_notification_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

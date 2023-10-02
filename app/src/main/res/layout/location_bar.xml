@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_search_bar_container"
+        android:layout_width="match_parent"
+        android:background="@drawable/location_bar_background"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/location"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/barlow_medium"
+                android:textColor="#444444"
+                android:gravity="bottom"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:text="@string/deliver_now"
+                android:textSize="11sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/barlow_medium"
+                android:textColor="@color/black"
+                android:gravity="top"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:text="@string/address"
+                android:textSize="13sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/filter_icon"
+            android:layout_width="wrap_content"
+            android:src="@drawable/down_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

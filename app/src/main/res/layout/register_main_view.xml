@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.test.assignment.utils.DraggableBottomSheet
+        android:id="@+id/layersBottomSheetView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_white_10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:id="@+id/view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <View
+                    android:id="@+id/dragViewStep"
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/radius_5dp_dragger">
+
+                </View>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_sheet_layer_item_height_settings">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/barlow_medium"
+                            android:text="@string/enter_your_mobile"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/register_main_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/edit_text_container_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/text_edit_background"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:background="@null"
+                        android:text="+94"
+                        android:textColor="@color/black"
+                        android:textSize="18sp">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:background="@null"
+                        android:hint="000 000 000"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:maxLength="9"
+                        android:textColorHint="@color/text_edit_hint_color"
+                        android:textSize="18sp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_description_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/register_view_description"
+                        android:textColor="@color/register_view_description_color"
+                        android:textSize="12sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/basic_button_width"
+                        android:layout_height="@dimen/basic_button_height"
+                        android:layout_centerInParent="true"
+                        android:background="@color/view_pager_select_color">
+
+                        <TextView
+                            android:id="@+id/get_started"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="center"
+                            android:text="@string/next"
+                            android:textAppearance="@style/get_started" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/next">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_main_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/verify_description_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/verify_view_description"
+                        android:textColor="@color/register_view_description_color"
+                        android:textSize="12sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_text_container_verify_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/text_edit_background"
+                    android:gravity="center_vertical">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="000  -  000"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_edit_hint_color"
+                        android:textSize="18sp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/resent_code_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_resend_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="@string/resend_code"
+                        android:textColor="@color/register_view_description_color"
+                        android:textSize="12sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_next_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/basic_button_width"
+                        android:layout_height="@dimen/basic_button_height"
+                        android:layout_centerInParent="true"
+                        android:background="@color/view_pager_select_color">
+
+                        <TextView
+                            android:id="@+id/next_verify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/barlow_medium"
+                            android:gravity="center"
+                            android:text="@string/next"
+                            android:textAppearance="@style/get_started" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/next">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.test.assignment.utils.DraggableBottomSheet>
+
+</FrameLayout>

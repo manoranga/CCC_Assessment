@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bottom_sheet_layer_item_height_settings">60dp</dimen>
+    <dimen name="bottom_sheet_layer_bottom_margin_settings">5dp</dimen>
+
+    <dimen name="basic_button_width">184dp</dimen>
+    <dimen name="basic_button_height">46dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="main_card_pn_margin">10dp</dimen>
+
+</resources>

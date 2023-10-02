@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Colombo City Center</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">skip</string>
+    <string name="enter_your_mobile">Enter your mobile number</string>
+    <string name="verify_number_title">Verify your mobile number</string>
+    <string name="register_view_description">By proceeding, you are consenting to receive calls or SMS messages, inculding by automated dialer from Colombo City Centre Merchants and its affiliates to the number you provide.</string>
+    <string name="verify_view_description">Enter 6 digihts OTP verification code that was sent your registered mobile no.</string>
+    <string name="resend_code">Didn’t get OTP?   Re-send</string>
+    <string name="order_dispatched">Order Dispatched</string>
+    <string name="order_dispatched_des">Your order has been dispatched with \n tracking number 3761028.</string>
+    <string name="stay_in_the">Stay in the loop</string>
+    <string name="get_importa">Get important alerts about your order status, discounts and more. You can change your notification \n settings from your account page.</string>
+    <string name="next">Next</string>
+    <string name="enable_notification">Enable Notifications</string>
+    <string name="not_now">Not Now</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_shops">Dashboard</string>
+    <string name="title_orders">Notifications</string>
+    <string name="title_cart">Notifications</string>
+    <string name="title_profile">Notifications</string>
+    <string name="what_are_you_looking">What are you looking for?</string>
+    <string name="deliver_now">Deliver Now</string>
+    <string name="address">35 Aponsu Mawatha, Moratuwa</string>
+    <string name="view_all">See all</string>
+    <string name="today_tranding">Today’s Trending</string>
+    <string name="shop_by_merchant">Shop by Top Merchant</string>
+
+
+    <string name="recent_searches">Recent Searches</string>
+    <string name="top_searches">Top Search Categories</string>
+
+    <string name="recent_1">Body Spray</string>
+    <string name="recent_2">White Range Gift Box</string>
+    <string name="recent_3">Eye Brow Nourishing</string>
+    <string name="top_1">Fashion</string>
+    <string name="top_2">Home Garden</string>
+    <string name="top_3">Jewelry</string>
+    <string name="top_4">Electronics</string>
+    <string name="result_count">12 Results for Body Spray</string>
+    <string name="searches">Searches</string>
+    <string name="change_delivery_address">Change Delivery Address</string>
+
+    <string name="update_address">Update Address</string>
+    <string name="remove_address">Remove Address</string>
+
+</resources>
